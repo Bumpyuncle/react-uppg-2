@@ -1,0 +1,55 @@
+/* styles/AppLayout.css */
+
+.main-layout {
+  padding: 20px;
+}
+
+.content-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+/* Gör att PostList är i mitten */
+.content-wrapper > :nth-child(1) {
+  grid-column: 2;
+}
+
+/* Gör att TagList hamnar till höger */
+.content-wrapper > :nth-child(2) {
+  grid-column: 3;
+}
+
+
+.content-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+
+body.menu-open .app {
+  margin-left: 180px;
+  transition: margin-left 0.3s ease;
+}
+
+
+
+@media (max-width: 768px) {
+  .content-wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  .content-wrapper > :nth-child(1) {
+    grid-column: 1;
+  }
+
+  .content-wrapper > :nth-child(2) {
+    grid-column: 1;
+  }
+}
+
+

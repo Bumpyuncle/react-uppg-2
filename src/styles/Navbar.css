@@ -1,0 +1,16 @@
+.navbar {
+  background-color: #000000;
+  color: white;
+  padding: 1rem;
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.navbar li {
+  cursor: pointer;
+}

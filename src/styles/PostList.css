@@ -1,0 +1,11 @@
+.postlist-container {
+  background-color: rgba(38, 195, 235, 0.4);
+  padding: 1rem;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
